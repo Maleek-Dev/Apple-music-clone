@@ -129,7 +129,7 @@
     gap: 5px;
     position: absolute;
     bottom: 0;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .side_down img{
     width: 25px;
@@ -383,4 +383,140 @@
 .releases_text{
     display: flex;
     justify-content: space-between;
+}
+.new_february{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+}
+
+.radio1 img{
+    width: 100%;
+    border-radius: 8px;
+    border: solid #edededad;
+    border-width: 1px;
+}
+.radio_img{
+    width: 30%;
+}
+.radio1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    gap: 10px;
+}
+.uicon img{
+    border: none;
+    width: 20px;
+}
+.section15{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sc15 h2{
+    color: #ededed;
+    font-size: 17px;
+}
+.explore{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 20px;
+margin-top: 20px;
+}
+.explore_content a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+}
+.explore_content img{
+    width: 20px;
+}
+.explore_content h4{
+    color: #fa586a;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+
+.Footer{
+    background-color: #323232;
+    margin-left: 230px;
+    padding: 20px 40px  40px 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+}
+.united ul{
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+
+}
+.united ul li {
+    display: flex;
+    text-decoration: none;
+    color: #eeeeee;
+    border: solid #4d4d4d;
+    border-width: 0px 1px 0px 0px;
+    padding-right: 5px;
+}
+.united ul li a{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 10px;
+}
+.copy{
+    display: flex;
+}
+.copy span, .copy h2{
+    font-size: 10px;
+    color: #eeeeee;
+}
+.sp2{
+    color: #eeeeee;
+    font-weight: 100;
+}
+.Bottom{
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #d60017;
+    padding: 0px 15px;
+
+}
+.bottomcontent h3{
+        color: #eeeeee;
+        font-size: 16px;
+}
+
+.bottomcontent span{
+    font-size: 12px;
+        color: #eeeeee;
+}
+.btm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+.butyn button{
+    padding: 5px 20px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
