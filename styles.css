@@ -147,12 +147,12 @@
     background-color: #2b2b2b;
     height: 60px;
     top: 0;
-    left: 230px;
+    margin-left: 230px;
     position: fixed;
     width: calc(100% - 230px);
-display: flex;
-  justify-content: space-between;
+    display: flex;
   align-items: center;
+  justify-content: center;
     
 }
 
@@ -160,9 +160,10 @@ display: flex;
     width: 100%;
     margin: 0;
     gap: 30px;
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    /* grid-template-columns: 1fr 1fr 1fr; */
 
 }
 .grid1 img{
@@ -170,6 +171,7 @@ display: flex;
 
 }
 .grid1{
+    width: 33.3%;
     display: flex;
     align-items: center;
      gap: 10px;
@@ -187,6 +189,7 @@ display: flex;
         justify-content: center;
 }
 .grid2{
+        width: 33.3%;
     background-color: #4d4d4d;
     margin: 3px;
     display: flex;
@@ -206,12 +209,14 @@ display: flex;
     justify-content: center;
 }
 .grid3{
+        width: 33.3%;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
 }
 .but{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,6 +257,7 @@ display: flex;
     width: 15px;
 }
 .vol_content{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
