@@ -9,7 +9,9 @@
     display: grid;
     grid-template-areas: "sidebar" "nav" "content";
 } */
-
+.phone_nav{
+    display: none;
+}
 .sidebar{
     top: 0;
     position: fixed;
@@ -149,7 +151,6 @@
     display: flex;
   align-items: center;
   justify-content: center;
-    
 }
 
 .nav_content{
@@ -212,10 +213,11 @@
     justify-content: center;
 }
 .but{
-    width: 100%;
+    width: 50%;
     display: flex;
+    gap: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 .but button{
     background-color: #d60017;
@@ -223,7 +225,7 @@
     align-items: center;
     gap: 5px;
     justify-content: center;
-    width: 30%;
+    width: 50%;
     text-align: center;
     padding: 4px;
     font-size: 14px;
@@ -231,9 +233,7 @@
     border: none;
     border-radius: 5px;
 }
-.but button img{
-    width: 20px;
-}
+
 .user{
     align-items: center;
     display: flex;
@@ -253,7 +253,7 @@
     width: 15px;
 }
 .vol_content{
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -728,4 +728,304 @@ text-align: right;
 
 }
 
+@media (max-width: 769px) {
+    .grid1{
+        display: none;
+    }
+    .vol_content{
+        display: none;
+    }
+    .content{
+        padding: 20px;
+    }
+    .nav{
+        display: flex;
+    }
+    .grid2{
+        width: 60%;
+    }
+    .grid3{
+        width: 40%;
+    }
+ 
+.first_content {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    width: 100%;
+    gap: 10px;
+    grid-auto-columns: 320px;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    /* overscroll-behavior-x: none; */
+}
+.section1, .section2,  .section_two, .section_three, .section3, .section4, .section5,
+.section6, .section7, .section8, .section9, .section10, .section11, .section12, .section13, .section14{
+    width: 100%;
+    margin: 10px 0px 0px 0px;
 
+    padding: 0;
+}
+.head{
+    width: 90%;
+}
+.latest_songs{
+    grid-template-columns: none;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 210px;
+    overflow-x: scroll;
+      scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+.new_releases, .new_february{
+    grid-template-columns: none;
+      gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 210px;
+    overflow-x: scroll;
+      scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 20px 0;
+    padding: 0;
+
+}
+.radio1{
+    display: none;
+}
+.Footer{
+    display: flex;
+}
+.user img{
+    display: block !important; 
+}
+.but img{
+    display: none;
+}
+.but{
+    width: 100%;
+}
+.foot1{
+    display: none;
+
+}
+.foot2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fut {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      justify-content: left;
+}
+.section15{
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}   
+.sc15{
+    align-items: left;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.explore{
+    grid-template-columns: 1fr;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar{
+    top: 0;
+    position: fixed;
+    left: 0;
+    height: 100%;
+}
+.side_down{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 0px 100px 0px;
+}
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .grid1{
+        display: none;
+    }
+    .vol_content{
+        display: none;
+    }
+    .content{
+        padding: 20px;
+    }
+    .nav{
+        display: flex;
+    }
+    .grid2{
+        width: 60%;
+    }
+    .grid3{
+        width: 40%;
+    }
+ 
+.first_content {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    width: 100%;
+    gap: 10px;
+    grid-auto-columns: 320px;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    /* overscroll-behavior-x: none; */
+}
+.section1, .section2,  .section_two, .section_three, .section3, .section4, .section5,
+.section6, .section7, .section8, .section9, .section10, .section11, .section12, .section13, .section14{
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+
+    padding: 0;
+}
+.head{
+    width: 90%;
+}
+.latest_songs{
+    grid-template-columns: none;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 210px;
+    overflow-x: scroll;
+      scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+.new_releases, .new_february{
+    grid-template-columns: none;
+      gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 210px;
+    overflow-x: scroll;
+      scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 20px 0;
+    padding: 0;
+
+}
+.radio1{
+    display: none;
+}
+.Footer{
+    display: flex;
+}
+.user img{
+    display: block !important; 
+}
+.but img{
+    display: none;
+}
+.but{
+    width: 100%;
+}
+.foot1{
+    display: none;
+
+}
+.foot2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fut {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      justify-content: left;
+}
+.section15{
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}   
+.sc15{
+    align-items: left;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.explore{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar{
+    top: 0;
+    position: fixed;
+    left: 0;
+    height: 100%;
+}
+.side_down{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 0px 100px 0px;
+}
+
+
+}
