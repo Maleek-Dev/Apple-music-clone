@@ -5,10 +5,10 @@
     font-family: "Poppins", sans-serif;
     /* background-color:  #1f1f1f; */
 }
-.gridcontainers{
+/* .gridcontainers{
     display: grid;
     grid-template-areas: "sidebar" "nav" "content";
-}
+} */
 
 .sidebar{
     top: 0;
@@ -82,8 +82,6 @@
     justify-content: center;
     gap: 25px;
     text-align: center;
-
-
 }
 .place img{
     width: 20px;
@@ -99,8 +97,6 @@
    position: relative;
    border: none;
    outline: none
-
-
 }
 .place button{
     background: none;
@@ -297,12 +293,11 @@
 .first_div  h3{
     color: #eeeeee;
     font-size: 16px;
+        font-weight: 200;
 }
 .first_div a{
     text-decoration: none;
 }
-
-
 
 .s2c a{
     padding-top: 40px;
@@ -408,6 +403,13 @@
     margin: 0;
     gap: 10px;
 }
+
+
+/* .radio_text{
+
+} */
+
+
 .uicon img{
     border: none;
     width: 20px;
@@ -508,6 +510,9 @@ margin-top: 20px;
     font-size: 12px;
         color: #eeeeee;
 }
+.bottomcontent img{
+  display: none;
+}
 .btm{
     display: flex;
     justify-content: space-between;
@@ -520,3 +525,207 @@ margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
 }
+.syd {
+    display: none;
+}
+
+/* Media Query */
+
+@media (max-width: 426px) {
+  .sidebar  {
+    display: none;
+}
+.nav{
+    display: none;
+}
+.content{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+.first_content {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    width: 100%;
+    gap: 10px;
+    grid-auto-columns: 320px;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    /* overscroll-behavior-x: none; */
+}
+.new_releases, .new_february{
+    grid-template-columns: none;
+      gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+    overflow-x: scroll;
+      scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 20px 0;
+    padding: 0;
+
+}
+.latest_songs{
+    grid-template-columns: none;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 323px;
+    overflow-x: scroll;
+      scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    display: grid;
+    margin: 0;
+    padding: 0;
+
+
+}
+.syd{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    width: 100%;
+}
+.syd_content{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.syd_content img{
+    width: 30px
+}
+.applelogo img{
+    width: 80px;
+     margin: 0;
+    padding: 0;
+}
+.syd_content a{
+    margin: 0;
+    padding: 0;
+    color: #fa586a;
+    text-decoration: none;
+}
+.section1, .section2,  .section_two, .section_three, .section3, .section4, .section5,
+.section6, .section7, .section8, .section9, .section10, .section11, .section12, .section13, .section14{
+    width: 90%;
+    margin: 20px 0px 0px 0px;
+
+    padding: 0;
+}
+.head{
+    width: 90%;
+    margin-top: 100px;
+}
+.section15{
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}   
+.sc15{
+    align-items: left;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+}
+.explore{
+    grid-template-columns: none;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: left;
+    justify-content: center;
+}
+.explore_content a{
+    display: flex;
+}
+.Footer{
+    display: flex;
+    width: 100%;
+    align-items: left;
+      justify-content: left;
+    margin: 0;
+    /* padding: 0; */
+    gap: 0;
+
+}
+.foot1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+.foot2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fut {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      justify-content: left;
+}
+
+.Bottom{
+    width: 100%;
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+    padding: 10px 0px;
+    position: fixed;
+    height: 65px;
+    top: 0;
+}
+.bottomcontent img{
+  display: block;
+  margin-top: 20px;
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  width: 16px;
+text-align: right;
+}
+.bottomcontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.btm{
+        width: 90%;
+
+}
+.butyn{
+    display: none;
+}
+.united{
+    width: 100%;
+    display: none;
+}
+
+}
+
+
