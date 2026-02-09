@@ -538,6 +538,9 @@ margin-top: 20px;
 .nav{
     display: none;
 }
+.nav_content{
+    display: none;
+}
 .content{
     width: 100%;
     padding: 0;
